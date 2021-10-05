@@ -5,14 +5,18 @@ const btn_f = document.getElementById("F")
 const btn_g = document.getElementById("G")
 const btn_h = document.getElementById("H")
 const btn_j = document.getElementById("J")
+const btn_k = document.getElementById("K")
+const btn_l = document.getElementById("L")
 
-const audioDo = document.getElementById("do")
+const audioDO = document.getElementById("do")
 const audioRE = document.getElementById("re")
 const audioMI = document.getElementById("mi")
 const audioFA = document.getElementById("fa")
 const audioSOL = document.getElementById("sol")
 const audioLA = document.getElementById("la")
 const audioSI = document.getElementById("si")
+const audioDO2 = document.getElementById("do2")
+const audioRE2 = document.getElementById("re2")
 
 document.addEventListener("keypress", (event) =>{
     if(event.key == "a"){
@@ -36,6 +40,12 @@ document.addEventListener("keypress", (event) =>{
     else if(event.key == "j"){
         audioSI.play();
     }
+    else if(event.key == "k"){
+        audioDO2.play();
+    }
+    else if(event.key == "l"){
+        audioRE2.play();
+    }
 });
 
 btn_a.addEventListener("click", ()=>{
@@ -58,4 +68,10 @@ btn_h.addEventListener("click", ()=>{
 })
 btn_j.addEventListener("click", ()=>{
     audioSI.play();
+})
+btn_k.addEventListener("click", ()=>{
+    audioDO2.play();
+})
+btn_l.addEventListener("click", ()=>{
+    audioRE2.play();
 })
